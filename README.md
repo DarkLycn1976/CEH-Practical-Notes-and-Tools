@@ -11,6 +11,7 @@ Successfully completed the CEH (Practical) exam by EC-Council with a score of 20
   
 * Scan Entire Network for ALive host using ARP
 ```console
+netdiscover -i eth0
 netdiscover -r x.x.x.1/24
 ```
   
