@@ -44,12 +44,12 @@ nmap -Pn -A x.x.x.1/24 -vv --open
 
 ## TryHackMe
 ### Learning Path
-[Pre-Security](https://tryhackme.com/paths) 
-[Jr Penetration Tester](https://tryhackme.com/paths)
-[Complete Beginner](https://tryhackme.com/paths) 
+* [Pre-Security](https://tryhackme.com/paths) 
+* [Jr Penetration Tester](https://tryhackme.com/paths)
+* [Complete Beginner](https://tryhackme.com/paths) 
 ### Rooms
-[Nmap](https://tryhackme.com/room/furthernmap)
-[SQLMAP]https://tryhackme.com/room/sqlmap
+* [Nmap](https://tryhackme.com/room/furthernmap)
+* [SQLMAP]https://tryhackme.com/room/sqlmap
 
   
 
