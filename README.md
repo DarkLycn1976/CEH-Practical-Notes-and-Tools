@@ -5,45 +5,56 @@ Successfully completed the CEH (Practical) exam by EC-Council with a score of 20
 
 # Reconnasiance/Footprinting
 <details>
-  <summary>Recon</summary>
-
-* -r range , Scan Entire Network for ALive host using ARP
+  <summary>Network</summary>
+  
+## Netdiscover
+  
+* Scan Entire Network for ALive host using ARP
 ```console
-$ netdiscover -r 192.168.29.1/24
+netdiscover -r x.x.x.1/24
 ```
+  
+## Nmap
 
-* -f switch do not fragment, -l buffer size
+* To scan the live Host
 ```console
-$ ping <host-ip> -f -l 1300
+nmap -sP x.x.x.1/24                 
+nmap -sn x.x.x.1/24
 ```
-  * __`tracert`__ for windows cmd
+* To find the Specific open port 
 ```console
-$ traceroute <host-ip>
-```
-* [Path Analyzer Pro](https://www.pathanalyzer.com/download.opp/) in traceroute tools, ensure icmp and smart is selected, stop on control is selected
-* Start Metasploit Console
-```console
-$ msfdb init && msfconsole
-$ msfdb status
-```
-* Nmap Scanning entire Network
-* Comprehensive Scan
-
-```console
-
-nmap -Pn -A x.x.x.1/24 -vv --open   
-```
-  > To scan the live Host
-```console
-
-nmap -sP x.x.x.1/24                 // To scan the live Host
-nmap -sn x.x.x.1/24                 // To scan the live Host
 nmap -p port x.x.x.1/24 --open
 ```
+* Comprehensive Scan
 ```console
-nmap -Pn -sS -A x.x.x.1/24 -vv --open
+nmap -Pn -A x.x.x.1/24 -vv --open   
 ```
 
+### Common Port  
 
+* 22        - SSH
+* 21        - FTP
+* 389,3389  - RDP
+* 3306      - MYSQL
+</details>
+
+# Reference
+<details>
+  <summary>TryHackMe</summary>
+
+## TryHackMe
+### Learning Path
+[Pre-Security](https://tryhackme.com/paths) 
+[Jr Penetration Tester](https://tryhackme.com/paths)
+[Complete Beginner](https://tryhackme.com/paths) 
+### Rooms
+[Nmap](https://tryhackme.com/room/furthernmap)
+[SQLMAP]https://tryhackme.com/room/sqlmap
+
+  
+
+## Useful Links
+[hash.com](https://hashes.com/en/decrypt/hash) is a online hash Identifier and Cracker 
+  
 
 </details>
