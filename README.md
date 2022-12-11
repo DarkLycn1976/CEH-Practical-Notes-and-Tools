@@ -38,7 +38,7 @@ nmap -Pn -A x.x.x.1/24 -vv --open
 * 3306      - MYSQL
 </details>
 
-# Reference
+# Resource
 <details>
   <summary>TryHackMe</summary>
 
@@ -49,12 +49,18 @@ nmap -Pn -A x.x.x.1/24 -vv --open
 * [Complete Beginner](https://tryhackme.com/paths) 
 ### Rooms
 * [Nmap](https://tryhackme.com/room/furthernmap)
-* [SQLMAP]https://tryhackme.com/room/sqlmap
+* [SQLMAP](https://tryhackme.com/room/sqlmap)
+* [Wireshark](https://tryhackme.com/room/wireshark)
+* [Hydra](https://tryhackme.com/room/hydra)
+* [DVWA](https://tryhackme.com/room/dvwa)
+* [OWASP Top 10](https://tryhackme.com/room/owasptop10)
 
   
+</details>  
 
-## Useful Links
-[hash.com](https://hashes.com/en/decrypt/hash) is a online hash Identifier and Cracker 
+<details>
+  <summary>Useful Links</summary>
   
-
+## Links
+* [hash.com](https://hashes.com/en/decrypt/hash) is a online hash Identifier and Cracker 
 </details>
