@@ -40,6 +40,13 @@ nmap -Pn -A x.x.x.1/24 -vv --open
 
 # Resource
 <details>
+  <summary>Course</summary>
+
+* [Penetration Testing Student - PTS ](https://my.ine.com/CyberSecurity/learning-paths/a223968e-3a74-45ed-884d-2d16760b8bbd/penetration-testing-student) from [INE](https://my.ine.com/)
+* [Practical Ethical Hacking PEH ](https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course) from [TCM Security](https://tcm-sec.com/)
+* [iLab](https://ilabs.eccouncil.org/ethical-hacking-exercises/) CEH Practical Official Lab from [EC-Council](https://www.eccouncil.org/)
+</details>
+<details>
   <summary>TryHackMe</summary>
 
 ## TryHackMe
@@ -48,6 +55,7 @@ nmap -Pn -A x.x.x.1/24 -vv --open
 * [Jr Penetration Tester](https://tryhackme.com/paths)
 * [Complete Beginner](https://tryhackme.com/paths) 
 ### Rooms
+* [Linux](https://tryhackme.com/module/linux-fundamentals)
 * [Nmap](https://tryhackme.com/room/furthernmap)
 * [SQLMAP](https://tryhackme.com/room/sqlmap)
 * [Wireshark](https://tryhackme.com/room/wireshark)
