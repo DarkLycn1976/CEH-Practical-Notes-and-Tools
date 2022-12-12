@@ -272,18 +272,21 @@ SNOW.EXE -C -p test hide.txt
   
   <img src = "CT.png"/>
   
-  * To install CrypTool 
+  * To Encrypt
   
-  <img src = "CT2.png"/>
-  <img src = "CT3.png"/>
-  <img src = "CT4.png"/>
   <img src = "CT5.png"/>
   <img src = "CT6.png"/>
+  
+  * Use Key 05 
+  
   <img src = "CT7.png"/>
   <img src = "CT8.png"/>
   <img src = "CT9.png"/>
   <img src = "CT10.png"/>
   <img src = "CT11.png"/>
+  
+  * To Decrypt
+  
   <img src = "CT12.png"/>
   <img src = "CT13.png"/>
   <img src = "CT14.png"/>
