@@ -5,7 +5,7 @@ Successfully completed the CEH (Practical) exam by EC-Council with a score of 20
 
 # Network Hacking
 <details>
-  <summary>Network </summary>
+  <summary>Netdiscover </summary>
   
 ## Netdiscover
   
@@ -14,6 +14,11 @@ Successfully completed the CEH (Practical) exam by EC-Council with a score of 20
 netdiscover -i eth0
 netdiscover -r x.x.x.1/24
 ```
+
+</details>
+
+<details>
+  <summary>Nmap </summary>
   
 ## Nmap
 
@@ -30,25 +35,29 @@ nmap -p port x.x.x.1/24 --open
 ```console
 nmap -Pn -A x.x.x.1/24 -vv --open   
 ```
-
-### Common Port  
+</details>
+<details>
+  <summary>Common Port </summary>
+   
 
 * 22        - SSH
 * 21        - FTP
 * 389,3389  - RDP
 * 3306      - MYSQL
 </details>
+</details>
 
 # Web Hacking
 <details>
-  <summary>Web</summary>
+  <summary>Nslookup</summary>
 
 * To verify Website's Ip
 ```console
-nslookup wwww.example.com
+Nslookup wwww.example.com
 ```
-  
-
+  </details>
+  <details>
+  <summary>File Upload</summary>
   
   ## File Upload Vulnerability
   
@@ -73,8 +82,9 @@ run
 ```console
   type C:\wamp64\www\DVWA\hackable\uploads\Hash.txt
 ```
-
- 
+  </details>
+<details>
+  <summary>SQL Injection</summary>
   
   ## SQL Injection
   
@@ -103,6 +113,7 @@ run
 ```console
   sqlmap -u "http://domain.com/path.aspx?id=1" --cookie=”PHPSESSID=1tmgthfok042dslt7lr7nbv4cb; security=low” -D database_name -T target_Table --dump
 ```
+  </details>
 
 
 
