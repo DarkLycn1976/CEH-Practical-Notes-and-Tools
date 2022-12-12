@@ -263,6 +263,33 @@ SNOW.EXE -C -p test hide.txt
 <img src="Snow.png"/>
 
 </details>
+<details>
+  <summary>CrypTool</summary>
+  
+  ### CrypTool
+  
+  * [CrypTool](https://www.cryptool.org/en/ct1/downloads) for hex 
+  
+  <img src = "CT.png"/>
+  
+  * To install CrypTool 
+  
+  <img src = "CT2.png"/>
+  <img src = "CT3.png"/>
+  <img src = "CT4.png"/>
+  <img src = "CT5.png"/>
+  <img src = "CT6.png"/>
+  <img src = "CT7.png"/>
+  <img src = "CT8.png"/>
+  <img src = "CT9.png"/>
+  <img src = "CT10.png"/>
+  <img src = "CT11.png"/>
+  <img src = "CT12.png"/>
+  <img src = "CT13.png"/>
+  <img src = "CT14.png"/>
+  <img src = "CT15.png"/>
+  <img src = "CT16.png"/>
+ </details>
  
 # File Transfer
 <details>
