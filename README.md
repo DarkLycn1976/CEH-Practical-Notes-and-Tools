@@ -37,7 +37,62 @@ nmap -Pn -A x.x.x.1/24 -vv --open
 ```
 </details>
 <details>
-  <summary>Common Port </summary>
+  <summary>Wireshark</summary>
+  
+  ## Wireshark
+  
+  * Wireshark provides the feature of reassembling a stream of plain text protocol packets into a human-readable format
+  
+  ```shell
+    select_packet > follow > TCP Stream
+  ```
+  
+  * To the get the specific method like ( post , get )
+  
+  ```console
+  http.request.method==post
+  http.request.method==get
+  ```
+  * To the Find DOS & DDOS
+  * go to Statistics and Select Conversations , sort by packets in IPv4 based on number of Packets transfer
+  
+  ```shell
+  Statistics > Conversations > IPv4 > Packets
+  
+  ```
+</details>
+
+<details>
+  <summary>Covert TCP</summary>
+  
+  ## Covert TCP
+  
+  * [covert_TCP](Covert_TCP.c) 
+  * In this we have to use Covert TCP technique to analyses the pcapng file.
+  * Traverse though each line in Wireshark and concentrate on Identification field, keep an eye on Hex value and ANSI value.
+  * Compile the Code
+  ```console
+cc -o covert_tcp covert_tcp.c
+  ```
+  * Reciever Machine(Client_IP)
+  ```console
+  sudo ./covert_tcp -dest Client_IP -source Attacker_IP -source_port 9999 -dest_port 8888 -server -file recieve.txt
+  ```
+  * Sender Machine(Attacker_IP)
+  * Create A Message file that need to be transferred Eg: secret.txt
+  ```console
+  sudo ./covert_tcp -dest Client_IP -source Attacker_IP -source_port 8888 -dest_port 9999 -file secret.txt
+  ```
+ 
+ * Secret message sent using Covert_TCP and it is captured using Wireshark - [Pcap_of_Covert](Covert_TCP_Capture.pcapng)
+ * The Secret text is -> Hello  This 123 -
+
+  <img src="CovertWireshark.jpg" />
+
+</details>
+<details>
+  <summary>Common Ports</summary>
+  
    
 
 * 22        - SSH
