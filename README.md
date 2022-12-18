@@ -360,6 +360,25 @@ SNOW.EXE -C -p test hide.txt
   <img src = "CT15.png"/>
   <img src = "CT16.png"/>
  </details>
+  
+  <details>
+  <summary>HashCalc</summary>
+    
+    ## HashCalc
+    
+    <imag src = "Hcal1.png" />
+    
+    <imag src = "Hcal2.png" />
+    
+    <imag src = "Hcal3.png" />
+    
+    <imag src = "Hcal4.png" />
+    
+    <imag src = "Hcal5.png" />
+    
+    <imag src = "Hcal6.png" />
+    
+  </details>
  
 # File Transfer
 <details>
