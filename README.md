@@ -1,9 +1,11 @@
-<img src="CEH-Practical-Logo.jpg">
+<img src="/IMG/CEH-Practical-Logo.jpg">
 
 # CEH-Practical-Notes-and-Tools
-Successfully completed the CEH (Practical) exam by EC-Council with a score of 20/20! Took me around 2 hours 20 minutes to complete the 6 hour proctored exam.  
+Successfully completed the CEH (Practical) exam by EC-Council with a score of 20/20! Took me around 2 hours 20 minutes to complete the 6 hour Proctored exam.  
 
-Just a typical CTF Player/Hacker going back to basics 💻
+> Just a typical CTF Player/Hacker going back to Basics 💻
+
+> My Personal Notes that I used on the Exam as a Cheatsheet
 
 # Network Hacking
 <details>
@@ -89,7 +91,7 @@ cc -o covert_tcp covert_tcp.c
  * Secret message sent using Covert_TCP and it is captured using Wireshark - [Pcap_of_Covert](Covert_TCP_Capture.pcapng)
  * The Secret text is -> Hello  This 123 -
 
-  <img src="CovertWireshark.jpg" />
+  <img src="/IMG/CovertWireshark.jpg" />
 
 </details>
 <details>
@@ -327,7 +329,7 @@ SNOW.EXE -C -p test -m "Secret Message" original.txt hide.txt
 ```console
 SNOW.EXE -C -p test hide.txt
 ```
-<img src="Snow.png"/>
+<img src="/IMG/Snow.png"/>
 
 </details>
 <details>
@@ -337,28 +339,28 @@ SNOW.EXE -C -p test hide.txt
   
   * [CrypTool](https://www.cryptool.org/en/ct1/downloads) for hex 
   
-  <img src = "CT.png"/>
+  <img src = "/IMG/Cryptool/CT.png"/>
   
   * To Encrypt
   
-  <img src = "CT5.png"/>
-  <img src = "CT6.png"/>
+  <img src = "/IMG/Cryptool/CT5.png"/>
+  <img src = "/IMG/Cryptool/CT6.png"/>
   
   * Use Key 05 
   
-  <img src = "CT7.png"/>
-  <img src = "CT8.png"/>
-  <img src = "CT9.png"/>
-  <img src = "CT10.png"/>
-  <img src = "CT11.png"/>
+  <img src = "/IMG/Cryptool/CT7.png"/>
+  <img src = "/IMG/Cryptool/CT8.png"/>
+  <img src = "/IMG/Cryptool/CT9.png"/>
+  <img src = "/IMG/Cryptool/CT10.png"/>
+  <img src = "/IMG/Cryptool/CT11.png"/>
   
   * To Decrypt
   
-  <img src = "CT12.png"/>
-  <img src = "CT13.png"/>
-  <img src = "CT14.png"/>
-  <img src = "CT15.png"/>
-  <img src = "CT16.png"/>
+  <img src = "/IMG/Cryptool/CT12.png"/>
+  <img src = "/IMG/Cryptool/CT13.png"/>
+  <img src = "/IMG/Cryptool/CT14.png"/>
+  <img src = "/IMG/Cryptool/CT15.png"/>
+  <img src = "/IMG/Cryptool/CT16.png"/>
  </details>
   
  <details>
@@ -367,22 +369,22 @@ SNOW.EXE -C -p test hide.txt
    ## HashCalc
     
    * HashCalc Interface.
-   <img src = "Hcal1.png"/>
+   <img src = "/IMG/HashCalc/Hcal1.png"/>
 
    * Create a text file.
-   <img src = "Hcal2.png"/>
+   <img src = "/IMG/HashCalc/Hcal2.png"/>
    
    * Choose text file.
-   <img src = "Hcal3.png"/>
+   <img src = "/IMG/HashCalc/Hcal3.png"/>
    
    * Hash Value of text file.
-   <img src = "Hcal4.png"/>
+   <img src = "/IMG/HashCalc/Hcal4.png"/>
    
    * Modify the text inside the file. 
-   <img src = "Hcal5.png"/>
+   <img src = "/IMG/HashCalc/Hcal5.png"/>
    
    * Compare the hash, It will vary.
-   <img src = "Hcal6.png"/>
+   <img src = "/IMG/HashCalc/Hcal6.png"/>
    
     
  
@@ -456,6 +458,6 @@ cp /root/Desktop/filename /var/www/html/share/
 * [hash.com](https://hashes.com/en/decrypt/hash) is a online hash Identifier and Cracker 
 </details>
 
-Final Words: Grab a cup of Tea and GRIND!!!
+Final Words: Grab a cup of Tea ☕ and GRIND!!!
 
-  <img src = "motivation.jpg"/>
+  <img src = "/IMG/motivation.jpg"/>
