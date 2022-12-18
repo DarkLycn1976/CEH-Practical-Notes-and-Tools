@@ -361,23 +361,31 @@ SNOW.EXE -C -p test hide.txt
   <img src = "CT16.png"/>
  </details>
   
-  <details>
-  <summary>HashCalc</summary>
+ <details>
+   <summary>HashCalc</summary>
+   
+   ## HashCalc
     
-    ## HashCalc
+   * HashCalc Interface.
+   <img src = "Hcal1.png"/>
+
+   * Create a text file.
+   <img src = "Hcal2.png"/>
+   
+   * Choose text file.
+   <img src = "Hcal3.png"/>
+   
+   * Hash Value of text file.
+   <img src = "Hcal4.png"/>
+   
+   * Modify the text inside the file. 
+   <img src = "Hcal5.png"/>
+   
+   * Compare the hash, It will vary.
+   <img src = "Hcal6.png"/>
+   
     
-    <imag src = "Hcal1.png" />
-    
-    <imag src = "Hcal2.png" />
-    
-    <imag src = "Hcal3.png" />
-    
-    <imag src = "Hcal4.png" />
-    
-    <imag src = "Hcal5.png" />
-    
-    <imag src = "Hcal6.png" />
-    
+ 
   </details>
  
 # File Transfer
@@ -413,6 +421,8 @@ cp /root/Desktop/filename /var/www/html/share/
 <details>
   <summary>Course</summary>
 
+  ## Course
+  
 * [Penetration Testing Student - PTS ](https://my.ine.com/CyberSecurity/learning-paths/a223968e-3a74-45ed-884d-2d16760b8bbd/penetration-testing-student) from [INE](https://my.ine.com/)
 * [Practical Ethical Hacking - PEH ](https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course) from [TCM Security](https://tcm-sec.com/)
 * [iLab](https://ilabs.eccouncil.org/ethical-hacking-exercises/) CEH (Practical) Official Lab from [EC-Council](https://www.eccouncil.org/)
