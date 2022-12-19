@@ -94,6 +94,30 @@ cc -o covert_tcp covert_tcp.c
   <img src="/IMG/CovertWireshark.jpg" />
 
 </details>
+
+<details>
+  <summary> LLMNR/NBT</summary>
+  
+  ##  LLMNR/NBT-NS Poisoning
+
+* [Responder](https://github.com/lgandx/Responder) - rogue authentication server to capture hashes.
+
+* This can be used to get the already logged-in user's password, who is trying to access a shared resource which is not present.
+  
+* In Parrot/Kali OS, 
+
+```console
+responder -I eth0  
+```
+
+* In windows, try to access the shared resource, logs are stored at usr/share/responder/logs/SMB<filename>
+* To crack that hash, use JohntheRipper
+
+```console
+john SMBfilename  
+```
+</details>
+
 <details>
   <summary>Common Ports</summary>
   
