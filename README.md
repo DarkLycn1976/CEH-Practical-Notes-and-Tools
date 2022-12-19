@@ -121,13 +121,38 @@ john SMBfilename
 <details>
   <summary>Common Ports</summary>
   
-   ## Common Port
+ ## Common Port
 
-* 22        - SSH
 * 21        - FTP
-* 389,3389  - RDP
+* 22        - SSH
+* 23        - TELNET
 * 3306      - MYSQL
+* 389,3389  - RDP
+
 </details>
+
+<details>
+  <summary>Port Login</summary>
+
+  ## Port Login
+    
+  * FTP Login
+    
+  ```console
+    ftp x.x.x.x
+  ```
+    
+  * SSH Login  
+  ```console
+    ssh username@x.x.x.x
+  ```
+    
+  * TELNET Login
+  ```console
+    telnet x.x.x.x
+  ```
+   
+ </details>
 </details>
 
 # Web Hacking
@@ -412,7 +437,27 @@ SNOW.EXE -C -p test hide.txt
    * Compare the hash, It will vary.
    <img src = "/IMG/HashCalc/Hcal6.png"/>
    
+ </details>
+
+  <details>
+    <summary>HashMyFile</summary>
+ 
+  ## HashMyFile  
     
+  * HashMyFile Application
+  <img src = "/IMG/HashMyFile/HMF1.png"/>
+    
+  * add folder to Hash the file presented in Folder  
+  <img src = "/IMG/HashMyFile/HMF2.png"/>  
+  <img src = "/IMG/HashMyFile/HMF3.png"/>
+
+  * After Hash the file
+  <img src = "/IMG/HashMyFile/HMF4.png"/>
+    
+  * Add More Hashing Format
+  <img src = "/IMG/HashMyFile/HMF5.png"/>
+
+   
  
   </details>
  
