@@ -463,10 +463,14 @@ SNOW.EXE -C -p test hide.txt
   
   * Create a text file contains "Hello" and save it, Right click the file to compare hash. 
   <img src = "/IMG/MD5 Calc/MD5Calc1.png"/>  
+  
   * MD5 Hash of text file
-  <img src = "/IMG/MD5 Calc/MD5Calc2.png"/>  
+  <img src = "/IMG/MD5 Calc/MD5Calc2.png"/> 
+  
   <img src = "/IMG/MD5 Calc/MD5Calc3.png"/>  
+  
   <img src = "/IMG/MD5 Calc/MD5Calc4.png"/>  
+  
 </details>
  
 # File Transfer
