@@ -35,6 +35,10 @@ nmap -sn x.x.x.1/24
 ```console
 nmap -p port x.x.x.1/24 --open
 ```
+* To find the OS 
+```console
+nmap -O x.x.x.x 
+```
 * Comprehensive Scan
 ```console
 nmap -Pn -A x.x.x.1/24 -vv --open   
