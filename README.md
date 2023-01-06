@@ -206,8 +206,15 @@ run
 * Damn Small SQLi Scanner ([DSSS](https://github.com/stamparm/DSSS)) is a fully functional SQL injection vulnerability scanner (supporting GET and POST parameters)
 * As of optional settings it supports HTTP proxy together with HTTP header values User-Agent, Referer and Cookie.
 
+  ```console
+ python3 dsss.py -u "url" --cookie="cookie"
+  ```
+  <img src="/IMG/DSSS/dsss1.jpg" />
+  
+* Open the binded URL
+  
+  <img src="/IMG/DSSS/dsss1.jpg" />
 
- 
 ### SQLMAP
   
 * List databases, add cookie values
