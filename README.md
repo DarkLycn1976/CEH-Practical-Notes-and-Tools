@@ -201,6 +201,12 @@ run
   ## SQL Injection
   
   * Login bypass with [' or 1=1 --]
+  
+### DSSS
+* Damn Small SQLi Scanner ([DSSS](https://github.com/stamparm/DSSS)) is a fully functional SQL injection vulnerability scanner (supporting GET and POST parameters)
+* As of optional settings it supports HTTP proxy together with HTTP header values User-Agent, Referer and Cookie.
+
+
  
 ### SQLMAP
   
@@ -476,7 +482,49 @@ SNOW.EXE -C -p test hide.txt
   <img src = "/IMG/MD5 Calc/MD5Calc4.png"/>  
   
 </details>
- 
+
+<details>
+    <summary>VeraCrypt</summary>
+    
+  <img src = "/IMG/VeraCrypt/VC1.png"/>
+  <img src = "/IMG/VeraCrypt/VC2.png"/>
+  <img src = "/IMG/VeraCrypt/VC3.png"/>
+  <img src = "/IMG/VeraCrypt/VC4.png"/>
+  <img src = "/IMG/VeraCrypt/VC5.png"/>
+  <img src = "/IMG/VeraCrypt/VC6.png"/>
+  <img src = "/IMG/VeraCrypt/VC7.png"/>
+  <img src = "/IMG/VeraCrypt/VC8.png"/>
+  <img src = "/IMG/VeraCrypt/VC9.png"/>
+  <img src = "/IMG/VeraCrypt/VC10.png"/>
+  <img src = "/IMG/VeraCrypt/VC11.png"/>
+  <img src = "/IMG/VeraCrypt/VC12.png"/>
+  <img src = "/IMG/VeraCrypt/VC13.png"/>
+  <img src = "/IMG/VeraCrypt/VC14.png"/>
+  <img src = "/IMG/VeraCrypt/VC15.png"/>
+  <img src = "/IMG/VeraCrypt/VC16.png"/>
+  <img src = "/IMG/VeraCrypt/VC17.png"/>
+  <img src = "/IMG/VeraCrypt/VC18.png"/>
+  
+</details> 
+
+<details>
+    <summary>BCTextEncoded</summary>
+    
+  <img src = "/IMG/BCTextEncoded/BCTE1.png"/>
+    
+  <img src = "/IMG/BCTextEncoded/BCTE2.png"/>
+    
+  <img src = "/IMG/BCTextEncoded/BCTE3.png"/>
+    
+  <img src = "/IMG/BCTextEncoded/BCTE4.png"/>
+    
+  <img src = "/IMG/BCTextEncoded/BCTE5.png"/>
+
+  <img src = "/IMG/BCTextEncoded/BCTE6.png"/>
+
+
+</details>
+
 # File Transfer
 <details>
   <summary>File Transfer</summary>
