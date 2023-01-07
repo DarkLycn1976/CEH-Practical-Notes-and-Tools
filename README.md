@@ -534,6 +534,18 @@ SNOW.EXE -C -p test hide.txt
 
 </details>
 
+<details>
+    <summary>Key Words</summary>
+  
+  * Img hidden      - Openstego
+  * .hex            - Cryptool
+  * Whitespace      - SNOW
+  * MD5             - Hashcalc & MD5 Calculator
+  * Encoded         - BCTexteditor
+  * Volume & mount  - Veracrypt
+
+</details>
+
 # File Transfer
 <details>
   <summary>File Transfer</summary>
