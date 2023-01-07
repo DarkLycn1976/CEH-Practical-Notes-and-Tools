@@ -479,6 +479,8 @@ SNOW.EXE -C -p test hide.txt
   
   <details>
     <summary>MD5 Calculator</summary>
+    
+    ## MD5 Calculator  
   
   * Create a text file contains "Hello" and save it, Right click the file to compare hash. 
   <img src = "/IMG/MD5 Calc/MD5Calc1.png"/>  
@@ -494,7 +496,10 @@ SNOW.EXE -C -p test hide.txt
 
 <details>
     <summary>VeraCrypt</summary>
-    
+      
+  ## VeraCrypt 
+
+  
   <img src = "/IMG/VeraCrypt/VC1.png"/>
   <img src = "/IMG/VeraCrypt/VC2.png"/>
   <img src = "/IMG/VeraCrypt/VC3.png"/>
@@ -518,6 +523,8 @@ SNOW.EXE -C -p test hide.txt
 
 <details>
     <summary>BCTextEncoded</summary>
+  
+  ## BCTextEncoded
     
   <img src = "/IMG/BCTextEncoded/BCTE1.png"/>
     
@@ -535,7 +542,10 @@ SNOW.EXE -C -p test hide.txt
 </details>
 
 <details>
-    <summary>Key Words</summary>
+    <summary>Keywords</summary>
+  
+  ## Keywords
+  
   
   * Img hidden      - Openstego
   * .hex            - Cryptool
