@@ -310,7 +310,7 @@ adb pull sdcard/log.txt /home/mmurphy/Desktop
 * To install Phonesploit 
 
 ```console
-git clone https://github.com/aerosol-can/PhoneSploit
+git clone https://github.com/prbhtkumr/PhoneSploit
 cd PhoneSploit
 pip3 install colorama
 OR
